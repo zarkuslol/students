@@ -1,0 +1,21 @@
+.studentsBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgb(0, 0, 40);
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.delBtn {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}

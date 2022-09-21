@@ -1,0 +1,7 @@
+.mainTitle {
+    padding: 40px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
