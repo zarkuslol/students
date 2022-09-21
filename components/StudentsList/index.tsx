@@ -4,6 +4,7 @@ import { StudentType } from "../../types/student";
 import Student from "../Student";
 import axios from "axios";
 import Loading from "../Loading";
+import Link from "next/link";
 
 const StudentsList = () => {
     const [students, setStudents] = useState<StudentType[]>([]);
@@ -35,9 +36,11 @@ const StudentsList = () => {
     return (
         <div className={styles.container}>
             <div className="btn-add-student">
-                <a href="/create">
-                    <button className={styles.addStudentButton}>+ Adicionar novo aluno</button>
-                </a>
+                <Link href="/create">
+                    <a>
+                        <button className={styles.addStudentButton}>+ Adicionar novo aluno</button>
+                    </a>
+                </Link>
             </div>
             <div className={styles.studentsList}>
                 {
