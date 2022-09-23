@@ -28,9 +28,11 @@ export default function handler(
         }
       }
     ).then((response) => {
-      if (response.status === 201) res.redirect("/");
+      if (response.status === 201) {
+        res.writeHead(302, { location: "/" }).end();
+      }
       else {
-        res.redirect("/create");
+        res.writeHead(302, { location: "/create" }).end();
         window.alert("Ocorreu um erro ao enviar os dados");
       }
     })

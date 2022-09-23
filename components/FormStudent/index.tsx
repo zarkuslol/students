@@ -8,10 +8,6 @@ const FormStudent = () => {
     const [gradeForm, setGradeForm] = useState<string>("");
     const [yearForm, setYearForm] = useState<number>(0);
 
-    const handleAddButtonClick = () => {
-        console.log({ name: nameForm, grade: gradeForm, year: yearForm });
-    }
-
     return (
         <div className={styles.container}>
             <form action="/api/hello" method="post" className={styles.mainForm}>

@@ -6,7 +6,11 @@ import axios from "axios";
 import Loading from "../Loading";
 import Link from "next/link";
 
-const StudentsList = () => {
+type Props = {
+    setRefresh: (value: boolean) => any;
+}
+
+const StudentsList = ({ setRefresh }: Props) => {
     const [students, setStudents] = useState<StudentType[]>([]);
     const [loadingData, setLoadingData] = useState<boolean>(true);
 
@@ -27,7 +31,6 @@ const StudentsList = () => {
 
     useEffect(() => {
         getAllData();
-        console.log("Ok 2");
     }, []);
 
     if (loadingData) {
