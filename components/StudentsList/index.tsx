@@ -27,6 +27,7 @@ const StudentsList = () => {
 
     useEffect(() => {
         getAllData();
+        console.log("Ok");
     }, []);
 
     if (loadingData) {
