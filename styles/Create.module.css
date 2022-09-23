@@ -5,3 +5,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 420px) {
+    .mainTitle {
+        font-size: 25px;
+    }
+}

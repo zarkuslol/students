@@ -34,3 +34,9 @@
     padding: 15px;
     font-size: 22px;
 }
+
+@media (max-width: 420px) {
+    .container {
+        width: 70%;
+    }
+}
